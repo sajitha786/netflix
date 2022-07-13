@@ -11,8 +11,7 @@ function RowPost(props) {
                 axios.get(props.url).then(response =>{
                         console.log(response.data)
                         setMovies(response.data.results)
-                }).catch(err =>{
-                     alert('Network Error')   
+                }).catch(err =>{ alert('Network Error')   
                 })
         },[props.url])
         const opts = {
